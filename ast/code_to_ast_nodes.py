@@ -1,7 +1,8 @@
 import ast
 import numpy as np
 
-def code_to_ast_path(code):
+def code_to_ast_paths(code):
+    # コードをastに変換
     try:
         tree = ast.parse(code)
     # エラーハンドリング
@@ -31,7 +32,7 @@ def main():
         return
 
     # ASTに変換
-    vector = code_to_ast_path(code)
+    vector = code_to_ast_paths(code)
 
     print("読み取ったコード:")
     print(code)
