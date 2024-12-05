@@ -24,10 +24,10 @@ def code_to_ast(code):
 def main():
     # コードを読み取り
     try:
-        with open("code_data.txt", "r") as file:
+        with open("../test_data/code_1.txt", "r") as file:
             code = file.read()
     except FileNotFoundError:
-        print("code_data.txt が見つかりません。")
+        print("code_1.txt が見つかりません。")
         return
 
     # ASTに変換
